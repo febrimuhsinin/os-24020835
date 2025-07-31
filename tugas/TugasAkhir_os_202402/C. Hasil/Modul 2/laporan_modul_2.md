@@ -2,96 +2,72 @@
 
 **Mata Kuliah**: Sistem Operasi
 **Semester**: Genap / Tahun Ajaran 2024–2025
-**Nama**: `<Nama Lengkap>`
-**NIM**: `<Nomor Induk Mahasiswa>`
+**Nama**: `<Febri Muhsinin>`
+**NIM**: `<240202835>`
 **Modul yang Dikerjakan**:
-`(Contoh: Modul 1 – System Call dan Instrumentasi Kernel)`
+`Modul 2 – Penjadwalan CPU Lanjutan (Priority Scheduling Non-Preemptive)`
 
 ---
 
 ## 📌 Deskripsi Singkat Tugas
 
-Tuliskan deskripsi singkat dari modul yang Anda kerjakan. Misalnya:
+Modul ini berfokus pada modifikasi mekanisme penjadwalan proses dalam kernel **xv6-public**. Algoritma bawaan **Round Robin** diubah menjadi **Non-Preemptive Priority Scheduling**, dengan fitur:
 
-* **Modul 1 – System Call dan Instrumentasi Kernel**:
-  Menambahkan dua system call baru, yaitu `getpinfo()` untuk melihat proses yang aktif dan `getReadCount()` untuk menghitung jumlah pemanggilan `read()` sejak boot.
+* Penambahan atribut `priority` pada struktur proses.
+* Implementasi syscall baru `set_priority(int)` untuk mengatur prioritas proses.
+* Scheduler dimodifikasi agar selalu menjalankan proses RUNNABLE dengan prioritas tertinggi (angka terkecil).
+
 ---
 
 ## 🛠️ Rincian Implementasi
 
-Tuliskan secara ringkas namun jelas apa yang Anda lakukan:
+Langkah-langkah yang dilakukan antara lain:
 
-### Contoh untuk Modul 1:
+* Menambahkan field `priority` ke dalam `struct proc` di `proc.h`.
+* Inisialisasi nilai default `priority = 60` pada fungsi `allocproc()` di `proc.c`.
+* Membuat system call `set_priority(int)`:
 
-* Menambahkan dua system call baru di file `sysproc.c` dan `syscall.c`
-* Mengedit `user.h`, `usys.S`, dan `syscall.h` untuk mendaftarkan syscall
-* Menambahkan struktur `struct pinfo` di `proc.h`
-* Menambahkan counter `readcount` di kernel
-* Membuat dua program uji: `ptest.c` dan `rtest.c`
+  * Tambah nomor syscall di `syscall.h`
+  * Tambah deklarasi di `user.h` dan entri di `usys.S`
+  * Registrasi syscall di `syscall.c`
+  * Implementasi handler `sys_set_priority()` di `sysproc.c`
+* Modifikasi fungsi `scheduler()` di `proc.c` agar memilih proses dengan prioritas tertinggi (terkecil) secara non-preemptive.
+* Membuat program uji `ptest.c` untuk memverifikasi urutan eksekusi proses berdasarkan prioritas.
+* Menambahkan `_ptest` ke daftar `UPROGS` di `Makefile`.
+
 ---
 
 ## ✅ Uji Fungsionalitas
 
-Tuliskan program uji apa saja yang Anda gunakan, misalnya:
+Program pengujian yang digunakan:
 
-* `ptest`: untuk menguji `getpinfo()`
-* `rtest`: untuk menguji `getReadCount()`
-* `cowtest`: untuk menguji fork dengan Copy-on-Write
-* `shmtest`: untuk menguji `shmget()` dan `shmrelease()`
-* `chmodtest`: untuk memastikan file `read-only` tidak bisa ditulis
-* `audit`: untuk melihat isi log system call (jika dijalankan oleh PID 1)
+* `ptest`: Memverifikasi bahwa proses dengan prioritas lebih tinggi (angka lebih kecil) dieksekusi lebih dulu, sesuai dengan konsep non-preemptive.
 
 ---
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal. Contoh:
-
-### 📍 Contoh Output `cowtest`:
+### 📍 Contoh Output `ptest`
 
 ```
-Child sees: Y
-Parent sees: X
-```
-
-### 📍 Contoh Output `shmtest`:
-
-```
-Child reads: A
-Parent reads: B
-```
-
-### 📍 Contoh Output `chmodtest`:
-
-```
-Write blocked as expected
-```
-
-Jika ada screenshot:
-
-```
-![hasil cowtest](./screenshots/cowtest_output.png)
+Child 2 selesai     
+Child 1 selesai     
+Parent selesai
 ```
 
 ---
 
 ## ⚠️ Kendala yang Dihadapi
 
-Tuliskan kendala (jika ada), misalnya:
-
-* Salah implementasi `page fault` menyebabkan panic
-* Salah memetakan alamat shared memory ke USERTOP
-* Proses biasa bisa akses audit log (belum ada validasi PID)
+* Lupa mengatur nilai default `priority` saat proses dibuat, menyebabkan nilai acak di scheduler.
+* Kelupaan menambahkan syscall di `usys.S` menyebabkan error saat pemanggilan `set_priority()`.
 
 ---
 
 ## 📚 Referensi
 
-Tuliskan sumber referensi yang Anda gunakan, misalnya:
-
-* Buku xv6 MIT: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
+* Dokumentasi xv6 MIT: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
 * Repositori xv6-public: [https://github.com/mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
-* Stack Overflow, GitHub Issues, diskusi praktikum
+* Diskusi praktikum, dokumentasi syscall di UNIX-like systems.
 
 ---
-
