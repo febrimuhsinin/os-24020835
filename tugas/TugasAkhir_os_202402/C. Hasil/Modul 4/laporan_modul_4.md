@@ -5,9 +5,13 @@ Berikut contoh laporan akhir untuk **Modul 4 – Subsistem Kernel Alternatif** s
 # 📝 Laporan Tugas Akhir
 
 **Mata Kuliah**: Sistem Operasi
+
 **Semester**: Genap / Tahun Ajaran 2024–2025
+
 **Nama**: `<Febri Muhsinin>`
+
 **NIM**: `<240202835>`
+
 **Modul yang Dikerjakan**:
 `Modul 4 – Subsistem Kernel Alternatif`
 
