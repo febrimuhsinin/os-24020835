@@ -4,9 +4,9 @@
 
 **Semester**: Genap / Tahun Ajaran 2024–2025
 
-**Nama**: `<Nama Lengkap>`
+**Nama**: `<Febri Muhsinin>`
 
-**NIM**: `<Nomor Induk Mahasiswa>`
+**NIM**: `<240202835>`
 
 **Modul yang Dikerjakan**:
 `Modul 5 – Audit dan Keamanan Sistem`
