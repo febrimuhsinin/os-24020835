@@ -1,9 +1,13 @@
 # 📝 Laporan Tugas Akhir
 
 **Mata Kuliah**: Sistem Operasi
+
 **Semester**: Genap / Tahun Ajaran 2024–2025
+
 **Nama**: `<Febri Muhsinin>`
+
 **NIM**: `<240202835>`
+
 **Modul yang Dikerjakan**:
 `Modul 1 – System Call dan Instrumentasi Kernel`
 
@@ -65,6 +69,9 @@ Read Count Setelah: 5
 ```
 
 ---
+## Screenshot
+<img width="759" height="545" alt="image" src="https://github.com/user-attachments/assets/6de2a8ce-ef43-4f7b-9d5e-a7bee1d555f9" />
+
 
 ## ⚠️ Kendala yang Dihadapi
 
@@ -79,9 +86,10 @@ Beberapa kendala yang ditemui:
 
 ## 📚 Referensi
 
-* Dokumentasi MIT xv6: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
-* Repositori xv6-public GitHub: [https://github.com/mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
-* Diskusi forum, Stack Overflow, dokumentasi sistem operasi terkait syscall dan pointer user-kernel.
+* Buku xv6 MIT: https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf
+* Repositori xv6-public: https://github.com/mit-pdos/xv6-public
+* Stack Overflow, GitHub Issues, diskusi praktikum
+* Chat GPT 
 
 ---
 
