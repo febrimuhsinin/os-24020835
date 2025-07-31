@@ -1,9 +1,13 @@
 # 📝 Laporan Tugas Akhir
 
 **Mata Kuliah**: Sistem Operasi
+
 **Semester**: Genap / Tahun Ajaran 2024–2025
+
 **Nama**: `<Febri Muhsinin>`
+
 **NIM**: `<240202835>`
+
 **Modul yang Dikerjakan**:
 `Modul 3 – Manajemen Memori Tingkat Lanjut (Copy-on-Write & Shared Memory)`
 
@@ -74,6 +78,14 @@ Parent reads: B
 
 ---
 
+## Screenshot
+### `cowtest`:
+<img width="900" height="606" alt="image" src="https://github.com/user-attachments/assets/1d975daf-5a8d-47e0-a540-9f3c7cb9c2b9" />
+
+### `shmtest`:
+<img width="1009" height="638" alt="image" src="https://github.com/user-attachments/assets/5859c6b7-da9b-42fc-b8d0-b17d0fbaa518" />
+
+
 ## ⚠️ Kendala yang Dihadapi
 
 * **Page Fault Error**: Salah pengecekan flag `PTE_COW` menyebabkan proses mati karena invalid access.
@@ -88,5 +100,6 @@ Parent reads: B
 * Buku xv6 MIT: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
 * Repositori xv6-public: [https://github.com/mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
 * Stack Overflow, GitHub Issues, diskusi praktikum
+* Chat GPT
 
 ---
