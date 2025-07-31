@@ -1,9 +1,13 @@
 # 📝 Laporan Tugas Akhir
 
 **Mata Kuliah**: Sistem Operasi
+
 **Semester**: Genap / Tahun Ajaran 2024–2025
+
 **Nama**: `<Febri Muhsinin>`
+
 **NIM**: `<240202835>`
+
 **Modul yang Dikerjakan**:
 `Modul 2 – Penjadwalan CPU Lanjutan (Priority Scheduling Non-Preemptive)`
 
@@ -56,11 +60,14 @@ Parent selesai
 ```
 
 ---
+## Screenshot
+<img width="726" height="441" alt="image" src="https://github.com/user-attachments/assets/2fe71fc6-6f69-4f68-950e-9feebcefe475" />
+
 
 ## ⚠️ Kendala yang Dihadapi
 
 * Lupa mengatur nilai default `priority` saat proses dibuat, menyebabkan nilai acak di scheduler.
-* Kelupaan menambahkan syscall di `usys.S` menyebabkan error saat pemanggilan `set_priority()`.
+* Lupa menambahkan syscall di `usys.S` menyebabkan error saat pemanggilan `set_priority()`.
 
 ---
 
@@ -69,5 +76,6 @@ Parent selesai
 * Dokumentasi xv6 MIT: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
 * Repositori xv6-public: [https://github.com/mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
 * Diskusi praktikum, dokumentasi syscall di UNIX-like systems.
+* Chat GPT
 
 ---
