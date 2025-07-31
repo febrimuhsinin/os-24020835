@@ -55,10 +55,8 @@ Write blocked as expected
 
 ### 📷 Screenshot:
 
-```
-<img width="960" height="540" alt="Screenshot Modul 4" src="https://github.com/user-attachments/assets/f71f893f-ad3d-44c0-930c-41742a59d133" />
+<img width="869" height="455" alt="image" src="https://github.com/user-attachments/assets/28e1999a-c802-47b0-a8bf-19d356922e32" />
 
-```
 ---
 
 ## ⚠️ Kendala yang Dihadapi
@@ -78,5 +76,3 @@ Write blocked as expected
 * Stack Overflow, diskusi kelas, dokumentasi praktikum
 
 ---
-
-<img width="960" height="540" alt="Screenshot Modul 4" src="https://github.com/user-attachments/assets/ce202261-e7e8-4eae-9f94-f16b51ebc707" />
