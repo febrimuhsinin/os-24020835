@@ -1,7 +1,3 @@
-Berikut contoh laporan akhir untuk **Modul 4 – Subsistem Kernel Alternatif** sesuai format yang kamu minta:
-
----
-
 # 📝 Laporan Tugas Akhir
 
 **Mata Kuliah**: Sistem Operasi
