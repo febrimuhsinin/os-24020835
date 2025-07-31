@@ -1,3 +1,7 @@
+Berikut contoh laporan akhir untuk **Modul 4 – Subsistem Kernel Alternatif** sesuai format yang kamu minta:
+
+---
+
 # 📝 Laporan Tugas Akhir
 
 **Mata Kuliah**: Sistem Operasi
@@ -52,7 +56,9 @@ Write blocked as expected
 ### 📷 Screenshot:
 
 ```
-<img width="960" height="540" alt="Screenshot Modul 4" src="https://github.com/user-attachments/assets/d37d701a-0628-44e6-a760-277ed4720566" />
+<img width="960" height="540" alt="Screenshot Modul 4" src="https://github.com/user-attachments/assets/f71f893f-ad3d-44c0-930c-41742a59d133" />
+
+```
 ---
 
 ## ⚠️ Kendala yang Dihadapi
@@ -67,8 +73,10 @@ Write blocked as expected
 
 ## 📚 Referensi
 
-* Buku xv6 MIT: [https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
-* Repositori xv6-public: [https://github.com/mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
-* Stack Overflow, GitHub Issues, diskusi praktikum
+* [Buku xv6 MIT](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
+* [Repositori xv6-public MIT](https://github.com/mit-pdos/xv6-public)
+* Stack Overflow, diskusi kelas, dokumentasi praktikum
 
 ---
+
+<img width="960" height="540" alt="Screenshot Modul 4" src="https://github.com/user-attachments/assets/ce202261-e7e8-4eae-9f94-f16b51ebc707" />
